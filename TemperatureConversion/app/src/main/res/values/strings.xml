@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Temperature Conversion</string>
+    <string name="temperature">Temperature:</string>
+    <string name="original_units">Original Units:</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="celsius">Celsius</string>
+    <string name="convert_to">Convert to:</string>
+    <string name="converted">Converted:</string>
+    <string name="convert">Convert</string>
+    <string name="reset">Reset</string>
+</resources>

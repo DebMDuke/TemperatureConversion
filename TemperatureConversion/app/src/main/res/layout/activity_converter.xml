@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_converter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.vcu.cmsc355.temperationconversion.Converter"
+    android:columnCount="2">
+
+    <TextView
+        android:text="@string/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextFromTemp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/fromTemp" />
+
+    <TextView
+        android:text="@string/original_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOriginalUnits"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:text="@string/fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbFromFahr"
+            android:layout_weight="1"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="@string/celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbFromCelsius"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/convert_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewConvertToUnits"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:text="@string/fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbToFahr"
+            android:layout_weight="1"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="@string/celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbToCelsius"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/converted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextConvertedTemp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/toTemp" />
+
+    <Button
+        android:text="@string/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertButton"
+        android:onClick="handleClick" />
+
+    <Button
+        android:text="@string/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetButton"
+        android:onClick="handleClick" />
+
+</GridLayout>
